@@ -326,4 +326,11 @@ p{
   p{
     font-size:initial;
   }
+  .text-zone{
+    margin-left: 20px !important;
+  }
+}
+
+.text-zone{
+  margin-left: 100px;
 }

@@ -8,6 +8,8 @@
     width: fit-content;
     padding: 40px 80px;
     margin-block: 20px;
+    width: 50vh;
+    height: 30vh;
 }
 
 .f {
@@ -26,7 +28,7 @@
     width: 90vh;
     opacity: 0;
     transition: all .5s ease-in;
-    height: 150px;
+    height: 30vh;
 }
 
 .full {
@@ -45,6 +47,10 @@
 #project1 {
     background-image: url(https://media.istockphoto.com/photos/delicious-meal-on-a-black-plate-top-view-copy-space-picture-id1165399909?k=20&m=1165399909&s=170667a&w=0&h=l3D08kaYzaoy51NnoV6cTQ1bqwhi6ACHv0G_rkFrA5Y=);
 }
+#project2{
+    background-image: url(https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/9b57653a-96d0-11e6-8952-00163ec9f5fa/670128898/spotify-spotify-uwp.jpg) !important;
+    
+  }
 
 /* #prodesc1{
     height: 150px;
@@ -59,6 +65,7 @@
     width: 500px;
   } */
 
+ 
 
 
 @media only screen and (max-width: 780px) {
@@ -68,7 +75,8 @@
         min-height: 25vh;
         border: 1px solid;
         padding: 10px;
-        transition: all 2s ease;
+        transition: all 2s ease;justify-content: space-between;
+
     }
 
 
@@ -81,6 +89,7 @@
         gap:2vh;
         margin-left: 0vh;
         margin-top: 0vh;
+        
     }
     .pbtn{
         border: 1px solid;

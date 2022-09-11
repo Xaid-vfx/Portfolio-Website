@@ -1,0 +1,52 @@
+.skills{
+    margin-top: 40px;
+}
+.skillcards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-block: 20px;
+}
+.skillcard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    height: 15vh;
+    width:22.1vh ;
+    margin-bottom: 20px;
+    transition: all .2s ease;
+}
+.skillcard img{
+    width:15vh;
+    height: 15vh;
+    border-radius: 100%;
+    border: 1px solid;
+    padding: 20px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    
+}
+.skillcard:hover{
+    transform: scale(1.1); 
+    
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+@media only screen and (max-width:780px) {
+    .skillcard{
+        width:fit-content;
+        justify-content: center;
+        height: 15vh; 
+    }
+    .skillcard h4{
+        font-size: medium;
+        
+    }
+}

@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './components/Projects'
 import { useRef } from 'react';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 
 
@@ -41,6 +42,7 @@ function App() {
         <div>
           <Skills/>
         </div>
+<div><Contact/></div>
       </div>
       
     </div>

@@ -1,0 +1,65 @@
+.about {
+    margin-block: 30vh;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.details {
+    width: 90vh;
+}
+
+.indet p.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#profileimg {
+    width: 40vh;
+    border-radius: 100%;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(100px);
+}
+
+#profileimg.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.indet {
+    padding-block: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+
+}
+
+.indet p {
+    opacity: 0;
+    margin-left: 5vh;
+    transition: all 1s;
+    transform: translateX(-100px);
+}
+
+
+@media only screen and (max-width:768px) {
+    #profileimg {
+        display: none;
+    }
+
+    .details {
+        width: 300px;
+    }
+
+    .about {
+        gap: 0;
+        display: block;
+    }
+
+    .indet p {
+        width: 300px;
+        font-size: large;
+
+    }
+}

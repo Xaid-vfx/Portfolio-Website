@@ -9,7 +9,7 @@ export default function SocialIcons() {
             <div className="social-icon">
                 <a href='https://www.linkedin.com/in/mohd-zaid-3889801b7/'><img src={navIcon1} alt='1' />
                 </a>
-                <a href='https://github.com/Xaid-vfx'><img src={navIcon2} alt='1' />
+                <a href='https://github.com/relaxxaid'><img src={navIcon2} alt='1' />
                 </a>
                 <a href='https://twitter.com/Xaid-vfx'><img src={navIcon3} alt='1' />
                 </a>

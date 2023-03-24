@@ -8,10 +8,9 @@ import navIcon1 from '../assets/img/li.svg'
 import navIcon2 from '../assets/img/git.svg'
 import navIcon3 from '../assets/img/twi.svg'
 import logo from './logo.jpg'
+import SocialIcons from './SocialIcons';
 
 function BasicExample(props) {
-
-
 
   const [link, setlink] = useState('home');
   const [scroll, setscroll] = useState(false);
@@ -73,16 +72,13 @@ function BasicExample(props) {
 
 
             </Nav>
+            <SocialIcons/>
             <span className='navbar-text'>
-              <div className="social-icon">
-                <a href='#'><img src={navIcon1} alt='1' />
-                </a>
-                <a href='#'><img src={navIcon2} alt='1' />
-                </a>
-                <a href='#'><img src={navIcon3} alt='1' />
-                </a>
-              </div>
-              <button className='connect' onClick={() => console.log('conn')}>Let's Connect</button>
+              
+              <button className='connect' onClick={() => {
+                props.handle4();
+                updatelink('contact')
+              }}>Let's Connect</button>
             </span>
           </Navbar.Collapse>
         </Container>

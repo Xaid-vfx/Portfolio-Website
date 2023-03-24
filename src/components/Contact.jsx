@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMailBulk, faMailForward, faMailReply, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import { faMessage } from '@fortawesome/free-regular-svg-icons'
+import SocialIcons from './SocialIcons'
 
 
 
@@ -30,7 +31,9 @@ export default function Contact() {
                         </p>
                         <textarea rows={6} cols={45} className='desc box' maxLength={500} style={{ "padding": "5px" }} type="Email" placeholder='Description' />
                     </div>
-                    <button className='showbtn box'>Send</button>
+                    <button className='showbtn box' onClick={()=>{
+                        alert('Sent')
+                    }}>Send</button>
                 </div>
 
                 <div className='line'></div>
@@ -47,14 +50,7 @@ export default function Contact() {
                         <div className='linever'></div>
 
                     </div>
-                    <div className="social-icon">
-                        <a href='#'><img src={navIcon1} alt='1' />
-                        </a>
-                        <a href='#'><img src={navIcon2} alt='1' />
-                        </a>
-                        <a href='#'><img src={navIcon3} alt='1' />
-                        </a>
-                    </div>
+                    <SocialIcons/>
                     <p id='copy'><small>Copyrights 	&#169; reserved</small></p>
                     <p className='made' id='copy'>Made by Zaid</p>
                 </div>

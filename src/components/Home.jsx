@@ -4,11 +4,9 @@ import Row from 'react-bootstrap/esm/Row'
 import Col from 'react-bootstrap/esm/Col'
 import { useEffect, useState } from 'react'
 import logo from '../assets/img/zlogo1.png'
-import navIcon1 from '../assets/img/li.svg'
-import navIcon2 from '../assets/img/git.svg'
-import navIcon3 from '../assets/img/twi.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fatwitter } from '@fortawesome/free-regular-svg-icons'
+import SocialIcons from './SocialIcons'
 
 export default function Home() {
 
@@ -97,14 +95,7 @@ export default function Home() {
                     </div>
 
                     <div className='omae'>
-                        <div className="social-icon">
-                            <a href='#'><img src={navIcon1} alt='1' />
-                            </a>
-                            <a href='#'><img src={navIcon2} alt='1' />
-                            </a>
-                            <a href='#'><img src={navIcon3} alt='1' />
-                            </a>
-                        </div>
+                        <SocialIcons />
                     </div>
 
                 </div>

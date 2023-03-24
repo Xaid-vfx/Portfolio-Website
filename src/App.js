@@ -17,6 +17,7 @@ function App() {
   const ref = useRef(null);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
+  const ref3 = useRef(null);
 
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,12 +31,10 @@ function App() {
   const handleClick3 = () => {
     ref2.current?.scrollIntoView({ behavior: 'smooth' });
   };
-  
+  const handleClick4 = () => {
+    ref3.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
-
-  const handle1 = () => {
-
-  }
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -93,7 +92,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar handle={handleClick} handle1={handleClick2} handle3={handleClick3} />
+      <Navbar handle={handleClick} handle1={handleClick2} handle3={handleClick3} handle4={handleClick4}/>
 
       <div className='page'>
 
@@ -128,7 +127,7 @@ function App() {
 
 
 
-        <div ><Contact /></div>
+        <div ref={ref3}><Contact /></div>
       </div>
 
     </div>

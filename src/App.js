@@ -47,7 +47,6 @@ function App() {
 
     }, { threshold: .5 })
 
-
     const boxElList = document.querySelectorAll('.projectx');
     boxElList.forEach((el) => {
       observer.observe(el);
@@ -112,9 +111,9 @@ function App() {
 
         </div>
 
-        <div ref={ref1}>
+        {/* <div ref={ref1}>
           <Skills />
-        </div>
+        </div> */}
 
         <div ref={ref2}>
 

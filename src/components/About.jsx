@@ -16,9 +16,9 @@ export default function About() {
 
   return (
     <div className='container about'>
-      <div className='details'>
-        <h1>About me</h1>
-
+      <div className='details relative'>
+        <h1>About</h1>
+        
         <div className='indet'>
           <span className='tags top-tags'>&lt;p&gt;</span>
 

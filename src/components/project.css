@@ -160,3 +160,13 @@
 
     
 }
+
+.cardcss{
+    opacity: 0;
+    transition: all .8s;
+    transform: translateX(150px);
+}
+.cardcss.show{
+    opacity: 1;
+    transform: translateX(0px);
+}

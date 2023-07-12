@@ -17,32 +17,40 @@ import { BsFileEarmarkPdf, BsGithub, BsChevronDoubleDown } from "react-icons/bs"
 export default function Home() {
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    setTimeout(() => {
+      document.getElementById('head1').classList.toggle('show', true)
+      document.getElementById('head2').classList.toggle('show', true)
 
-        entry.target.classList.toggle('show', entry.isIntersecting)
-        if (entry.isIntersecting) observer.unobserve(entry.target)
+    }, 500);
+    setTimeout(() => {
+      document.getElementById('foot1').classList.toggle('show', true)
+      document.getElementById('foot2').classList.toggle('show', true)
+    }, 2000);
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach(entry => {
+  //       entry.target.classList.toggle('show', entry.isIntersecting)
+  //       if (entry.isIntersecting) observer.unobserve(entry.target)
 
-      })
+  //     })
 
-    }, { threshold: 0 })
+  //   }, { threshold: 0 })
 
-    const ob1 = document.querySelectorAll('#head1');
-    ob1.forEach((el) => {
-      observer.observe(el);
-    })
-    const ob2 = document.querySelectorAll('#head2');
-    ob2.forEach((el) => {
-      observer.observe(el);
-    })
-    const ob3 = document.querySelectorAll('#foot1');
-    ob3.forEach((el) => {
-      observer.observe(el);
-    })
-    const ob4 = document.querySelectorAll('#foot2');
-    ob4.forEach((el) => {
-      observer.observe(el);
-    })
+  //   // const ob1 = document.querySelectorAll('#head1');
+  //   // ob1.forEach((el) => {
+  //   //   observer.observe(el);
+  //   // })
+  //   // const ob2 = document.querySelectorAll('#head2');
+  //   // ob2.forEach((el) => {
+  //   //   observer.observe(el);
+  //   // })
+  //   // const ob3 = document.querySelectorAll('#foot1');
+  //   // ob3.forEach((el) => {
+  //   //   observer.observe(el);
+  //   // })
+  //   const ob4 = document.querySelectorAll('#foot2');
+  //   ob4.forEach((el) => {
+  //     observer.observe(el);
+  //   })
   }, [])
 
   return (

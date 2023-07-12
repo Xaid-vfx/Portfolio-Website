@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div className='h-[100vh]'>
-      <div className='flex justify-center items-center h-[90%] pt-[7%] pb-[3%]'>
+      <div className='flex justify-center items-center h-[85%] pt-[7%] pb-[3%]'>
         <div id="headContainer" className='w-7/12'>
           <div className='text-center tracking-[5px] text-lg' id="head1">
             HI I AM <div className='inline text-blue-500'>ZAID</div>
@@ -73,8 +73,6 @@ export default function Home() {
                 GITHUB</div></button>
           </div>
         </div>
-
-
       </div>
       <div className='flex justify-center'>
         <BsChevronDoubleDown className='text-[2em] scrollIcon' />

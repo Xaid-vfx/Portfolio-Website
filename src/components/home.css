@@ -134,6 +134,12 @@ body {
     z-index: -2;
     transform: translateZ(0px) scale(1);
   }
+  .wrappersub3{
+    position: relative;
+    z-index: -3;
+  }
+
+
   @media (max-width:540px) {
     .welcome{
       font-size: 40px;

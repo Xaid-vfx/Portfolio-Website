@@ -43,8 +43,6 @@ export default function Home() {
     ob4.forEach((el) => {
       observer.observe(el);
     })
-
-
   }, [])
 
   return (

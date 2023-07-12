@@ -54,18 +54,12 @@ export default function Projects() {
   }
 
   useEffect(() => {
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-
         entry.target.classList.toggle('show', entry.isIntersecting)
         if (entry.isIntersecting) observer.unobserve(entry.target)
-
       })
-
     }, { threshold: .5 })
-
-
     for (let i = 1; i <= 4; i++) {
       const project = document.querySelectorAll(".card" + i)
       project.forEach((el) => {
@@ -73,14 +67,7 @@ export default function Projects() {
         observer.observe(el);
       })
     }
-
-
-
   }, [])
-
-
-
-
 
   return (
     <div className="flex relative gap-2 justify-center flex-col items-center h-[120vh] projectbg">

@@ -20,12 +20,12 @@ export default function Home() {
     setTimeout(() => {
       document.getElementById('head1').classList.toggle('show', true)
       document.getElementById('head2').classList.toggle('show', true)
-
+      setTimeout(() => {
+        document.getElementById('foot1').classList.toggle('show', true)
+        document.getElementById('foot2').classList.toggle('show', true)
+      }, 1500);
     }, 500);
-    setTimeout(() => {
-      document.getElementById('foot1').classList.toggle('show', true)
-      document.getElementById('foot2').classList.toggle('show', true)
-    }, 2000);
+    
   //   const observer = new IntersectionObserver((entries) => {
   //     entries.forEach(entry => {
   //       entry.target.classList.toggle('show', entry.isIntersecting)

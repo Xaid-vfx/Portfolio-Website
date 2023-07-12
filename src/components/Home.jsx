@@ -25,7 +25,7 @@ export default function Home() {
 
       })
 
-    }, { threshold: .2 })
+    }, { threshold: 0 })
 
     const ob1 = document.querySelectorAll('#head1');
     ob1.forEach((el) => {

@@ -1,0 +1,162 @@
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #0077ff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 90px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+.welcome{
+    font-size: 6vw;
+    font-weight: bolder;
+    font: bolder;
+    line-height: normal;
+}
+
+#head1{
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all .8s;
+}
+#head1.show{
+    opacity: 1;
+    transform: translate(0px);
+}
+#head2{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.2s;
+}
+#head2.show{
+    opacity: 1;
+    transform: translate(0px);
+}
+#foot1{
+    opacity: 0;
+    transition: ease-in 1s;
+}
+#foot1.show{
+    opacity: 1;
+}
+#foot2{
+    opacity: 0;
+    transition: ease-in 1s;
+}
+#foot2.show{
+    opacity: 1; 
+}
+
+.scrollIcon {
+    animation: zoom-in-zoom-out 1.5s infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.15, 1.15);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+
+
+  .wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+  }
+  .wrappersub{
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -3;
+    transform: translateZ(-10px) scale(2);
+  }
+  .wrappersub2{
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -2;
+    transform: translateZ(0px) scale(1);
+  }
+  .wrappersub3{
+    position: relative;
+    transform-style: preserve-3d;
+    z-index: -3;
+    transform: translateZ(10px) scale(1/2);
+  }
+
+
+  @media (min-width:320px) and (max-width:540px) {
+    .welcome{
+      font-size: 40px;
+    }
+    #headContainer{
+      width: 80%;
+      height: fit-content;
+    }
+    #foot1{
+      font-size: xx-small;
+      line-height: normal;
+    }
+    #btnText{
+      font-size: 10px;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }

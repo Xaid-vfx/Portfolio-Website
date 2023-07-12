@@ -63,3 +63,31 @@
 
     }
 }
+
+.connectLine{
+    position: absolute;
+    border: .01em solid;
+    opacity: .2;
+    height: 100%;
+    left: 5%;
+    top:0
+}
+.PageNumber{
+    position: absolute;
+    left: 4.2%;
+    display: flex;
+    top: 10%;
+    gap: 20px;
+    height: fit-content;
+    align-items: center;
+}
+.number{
+    font-size: x-small;
+    background-color: gray;
+    border-radius: 100px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+.abouttitle{
+    font-size: xx-large;
+}

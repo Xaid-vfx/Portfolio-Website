@@ -2,6 +2,7 @@ import React from 'react'
 
 
 export default function Skillcard() {
+    
     return (
         <div className='skillcards'>
 

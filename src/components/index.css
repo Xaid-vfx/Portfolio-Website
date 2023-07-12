@@ -9,6 +9,7 @@
 }
 
 
+
 @font-face {
   font-family: Centra;
   src: url(../assets/font/CentraNo2-Medium.ttf);
@@ -294,17 +295,6 @@ p.danger {
   margin-left: 10vh;
 }
 
-
-.page {
-
-  
-  margin-top: 20vh;
-  margin-inline: 14vh;
-  height: 100%;
-  color: white;
-  padding-inline: 20px;
-}
-
 @font-face {
   font-family: 'La Belle Aurore';
   src: url(../assets/font/LaBelleAurore.woff2);
@@ -424,7 +414,7 @@ p {
 
 
 .svg {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -438,6 +428,7 @@ p {
 }
 
 .text-copy {
+  opacity: 0;
   fill: none;
   stroke: white;
   stroke-dasharray: 6% 29%;

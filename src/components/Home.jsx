@@ -75,7 +75,7 @@ export default function Home() {
 
           </div>
           <div className='flex gap-5 justify-center mt-5 text-[1vw]' id='foot2'>
-            <button id='btnText' className=' border border-2 rounded text-[1em] hover:bg-white hover:text-black flex gap-2'>
+            <button id='btnText' onClick={()=>{window.location.href = "https://drive.google.com/file/d/144t6lJpFZiuVyl6SUHMR94V_s6z-Zb9G/view?usp=drivesdk"}} className=' border border-2 rounded text-[1em] hover:bg-white hover:text-black flex gap-2'>
               <BsFileEarmarkPdf className='  text-[1.4em]' />
               <div>RESUME</div>
             </button>

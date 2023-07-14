@@ -136,8 +136,17 @@ body {
   }
   .wrappersub3{
     position: relative;
-    z-index: -3;
   }
+
+  #btnText{
+    border: 2px solid;
+    border-radius: 10px;
+    display: flex;
+    gap: 2px;
+    padding-inline: 30px;
+    padding-block: 15px;
+  }
+
 
 
   @media (max-width:540px) {

@@ -13,6 +13,9 @@ import ParticlesBack from './Particle'
 import Particle from './Particle'
 import ParticleBack from './Particle'
 import { BsFileEarmarkPdf, BsGithub, BsChevronDoubleDown } from "react-icons/bs";
+import navIcon1 from '../assets/img/li.svg'
+import navIcon2 from '../assets/img/git.svg'
+import navIcon3 from '../assets/img/twi.svg'
 
 export default function Home() {
 
@@ -25,32 +28,32 @@ export default function Home() {
         document.getElementById('foot2').classList.toggle('show', true)
       }, 1500);
     }, 500);
-    
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach(entry => {
-  //       entry.target.classList.toggle('show', entry.isIntersecting)
-  //       if (entry.isIntersecting) observer.unobserve(entry.target)
 
-  //     })
+    //   const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
+    //       entry.target.classList.toggle('show', entry.isIntersecting)
+    //       if (entry.isIntersecting) observer.unobserve(entry.target)
 
-  //   }, { threshold: 0 })
+    //     })
 
-  //   // const ob1 = document.querySelectorAll('#head1');
-  //   // ob1.forEach((el) => {
-  //   //   observer.observe(el);
-  //   // })
-  //   // const ob2 = document.querySelectorAll('#head2');
-  //   // ob2.forEach((el) => {
-  //   //   observer.observe(el);
-  //   // })
-  //   // const ob3 = document.querySelectorAll('#foot1');
-  //   // ob3.forEach((el) => {
-  //   //   observer.observe(el);
-  //   // })
-  //   const ob4 = document.querySelectorAll('#foot2');
-  //   ob4.forEach((el) => {
-  //     observer.observe(el);
-  //   })
+    //   }, { threshold: 0 })
+
+    //   // const ob1 = document.querySelectorAll('#head1');
+    //   // ob1.forEach((el) => {
+    //   //   observer.observe(el);
+    //   // })
+    //   // const ob2 = document.querySelectorAll('#head2');
+    //   // ob2.forEach((el) => {
+    //   //   observer.observe(el);
+    //   // })
+    //   // const ob3 = document.querySelectorAll('#foot1');
+    //   // ob3.forEach((el) => {
+    //   //   observer.observe(el);
+    //   // })
+    //   const ob4 = document.querySelectorAll('#foot2');
+    //   ob4.forEach((el) => {
+    //     observer.observe(el);
+    //   })
   }, [])
 
   return (
@@ -63,15 +66,17 @@ export default function Home() {
           <div className='welcome text-center animate-charcter mb-10 mt-2' id="head2">
             Introducing my portfolio
           </div>
-          <div className='tracking-wider text-base opacity-70' id='foot1'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis voluptatem nobis maxime ut, aperiam minus sint corrupti, esse fugit quo ex molestiae amet quos mollitia sed laborum itaque illo.
+          <div className='text-sm opacity-60 text-center tracking-[3px] text-pink-600' id='foot1'>
+           <span className='text-slate-400'>SOFTWARE</span> DEVELOPER
             <br />
-            <br />
-           
+            <div className='text-white tracking-widest mt-2'>
+            
+            </div>
+
           </div>
           <div className='flex gap-5 justify-center mt-5 text-[1vw]' id='foot2'>
             <button id='btnText' className=' border border-2 rounded text-[1em] hover:bg-white hover:text-black flex gap-2'>
-              <BsFileEarmarkPdf  className='  text-[1.4em]' />
+              <BsFileEarmarkPdf className='  text-[1.4em]' />
               <div>RESUME</div>
             </button>
             <button onClick={() => { window.location.href = "https://github.com/Xaid-vfx" }} id='btnText' className='border border-2 rounded  text-[1em] hover:bg-white hover:text-black flex gap-2'>
@@ -108,6 +113,6 @@ export default function Home() {
           <use xlinkHref="#s-text" class="text-copy"></use>
         </g>
       </svg> */}
-      </div>
+    </div>
   )
 }

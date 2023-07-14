@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Serif&family=Rubik&family=Ubuntu:wght@700&family=Varela+Round&family=Ysabeau+SC:wght@500&display=swap');
+
+*{
+font-family: 'Poppins', sans-serif;;
+}
+.OSAlign{
+    padding: 8%; 
+    margin: 0; 
+   }
+
+@media (min-width: 300px) and (max-width:500px) {
+    .OSAlign{
+     padding: 5%;
+     margin: 0; 
+    }
+    .OSTitle{
+        font-size: x-large;
+    }
+    .OsSubTitle{
+        font-size: large;
+    }
+    #OSCardContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #OSCardImage{
+        width: 50%;
+    }
+    #OSCardContent{
+        width: 100%;
+        font-size: small;
+    }
+    #OSCardContentStack{
+        justify-content: space-between;
+        font-size: x-small;
+    }
+    .OSCardStats{
+        font-size: smaller;
+    }
+    .OSCardStatsCont{
+        flex-direction: column;
+        gap: .8em;
+    }
+}

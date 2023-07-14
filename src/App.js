@@ -11,6 +11,9 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import ParticleBack from './components/Particle';
+import Experience from './components/Experience/Experience';
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import OpenSource from './Pages/OpenSource';
 
 function App() {
 
@@ -98,32 +101,41 @@ function App() {
 
   return (
     <div className='App'>
-      <ParticleBack />
-      <div className='page text-white'>
 
-        <div className='wrapper'>
-          <div className='wrappersub'>
-            <Home/>
-          </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={
+            <div className='page text-white'>
+              <ParticleBack />
+              <div className='wrapper'>
 
-          <div className='wrappersub2'>
-            <About />
-          </div>
+                <div className='wrappersub'>
+                  <Home />
+                </div>
 
-          {/* <div className='wrappersub3 h-[110vh]'>
-            <Skills />
-          </div> */}
+                <div className='wrappersub2'>
+                  <About />
+                </div>
 
-          <div className='wrappersub3'>
-            <Projects />
-          </div>
+                {/* <div className='wrappersub3 h-[110vh]'>
+              <Skills />
+            </div> */}
 
-        
+                <div className='wrappersub3'>
+                  <Projects />
+                </div>
 
-        <div ref={ref3} className=''><Contact /></div>
-
-        </div>
-      </div>
+                <div className='wrappersub3'>
+                  <Experience />
+                </div>
+                <div ref={ref3} className=''><Contact /></div>
+              </div>
+            </div>
+          } />
+          <Route path='/open-source' element={<div>
+            <OpenSource/>
+          </div>}/>
+        </Routes></BrowserRouter>
 
     </div>
   );

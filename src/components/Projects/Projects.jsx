@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Projectcard from './Projectcard'
 import './project.css'
-import ParticleBack from "./Particle";
+import ParticleBack from "../Particle";
 
 export default function Projects() {
   const res = [{
@@ -70,11 +70,11 @@ export default function Projects() {
   }, [])
 
   return (
-    <div className="flex relative gap-2 justify-center flex-col items-center h-[120vh] projectbg">
+    <div className="flex relative gap-2 justify-center flex-col items-center h-[130vh] projectbg">
       <div className='connectLine'>
       </div>
       <div className='PageNumber'><div className='number'>2</div> <div className='abouttitle'>Projects</div></div>
-      <div className={'absolute top-[20%] grid grid-cols-2 w-9/12'}>
+      <div className={'ProjectsAlignment absolute top-[20%] grid grid-cols-2 w-9/12'}>
         {res.map((e) => {
           return <div className={"card" + e.id + " " + "cardcss"} id={e.id} onMouseEnter={(e) => { enter(e) }} onMouseLeave={(e) => { exit(e) }}><Projectcard name={e.name} desc={e.desc} link={e.link} id={e.id} stack={e.stack} git={e.git} live={e.live} /></div>
         })}

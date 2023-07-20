@@ -5,7 +5,7 @@ import About from './components/About';
 import './components/index.css'
 import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Projects from './components/Projects'
+import Projects from './components/Projects/Projects'
 import { useEffect, useRef, useState } from 'react';
 import Skills from './components/Skills';
 import Contact from './components/Contact';

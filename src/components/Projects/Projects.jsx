@@ -70,7 +70,7 @@ export default function Projects() {
   }, [])
 
   return (
-    <div className="flex relative gap-2 justify-center flex-col items-center h-[130vh] projectbg">
+    <div className="flex relative gap-2 justify-center flex-col items-center h-[140vh] projectbg border">
       <div className='connectLine'>
       </div>
       <div className='PageNumber'><div className='number'>2</div> <div className='abouttitle'>Projects</div></div>

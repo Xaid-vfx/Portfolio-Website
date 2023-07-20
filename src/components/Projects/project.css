@@ -139,7 +139,8 @@
     .ProjectsAlignment{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        justify-content: space-evenly;
+        height: 80%;
     }
     .projectName{
         font-size: large;

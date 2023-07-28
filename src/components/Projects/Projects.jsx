@@ -10,7 +10,7 @@ export default function Projects() {
     desc: "A Full stack image selling e-commerce website built using React.js and Firebase",
     link: "https://ewm.swiss/application/files/8216/1597/9679/E-commerce_web_design_EWM_SA_Digital_Agency_Geneva.jpg",
     git: "https://github.com/Xaid-vfx/ecom",
-    live: "",
+    live: "https://imagery-tan.vercel.app/",
     stack: ["React.js,", " JavaScript"]
   }, {
     id: 2,

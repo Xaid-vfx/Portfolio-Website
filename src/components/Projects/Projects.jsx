@@ -6,8 +6,8 @@ import ParticleBack from "../Particle";
 export default function Projects() {
   const res = [{
     id: 1,
-    name: "E-commerce",
-    desc: "A Full stack image selling e-commerce website built using React.js and Firebase",
+    name: "SnapShoot",
+    desc: "Snapshoot is a platform that caters to users seeking copyright-free images for a wide range of purposes.",
     link: "https://ewm.swiss/application/files/8216/1597/9679/E-commerce_web_design_EWM_SA_Digital_Agency_Geneva.jpg",
     git: "https://github.com/Xaid-vfx/ecom",
     live: "https://imagery-tan.vercel.app/",
